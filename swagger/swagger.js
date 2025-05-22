@@ -6,7 +6,7 @@ const doc = {
     title: 'Contacts API',
     description: 'API for managing contacts'
   },
-  host: 'localhost:3000', // change to Render domain when deployed
+  host: 'https://contact-api-ja.onrender.com', // localhost:3000' changed to Render domain upon deployed
   schemes: ['http'],
   basePath: '/api'
 };
