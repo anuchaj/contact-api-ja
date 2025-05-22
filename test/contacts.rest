@@ -2,7 +2,7 @@
 GET http://localhost:3000/api/contacts
 
 ### Get contact by ID
-GET http://localhost:3000/api/contacts/{682628cd12b8f2ec52e24df6}
+GET http://localhost:3000/api/contacts/682628cd12b8f2ec52e24df6
 
 ### Create contact
 POST http://localhost:3000/api/contacts
@@ -17,7 +17,7 @@ Content-Type: application/json
 }
 
 ### Update contact
-PUT http://localhost:3000/api/contacts/{682628cd12b8f2ec52e24df6}
+PUT http://localhost:3000/api/contacts/682628cd12b8f2ec52e24df6
 Content-Type: application/json
 
 {

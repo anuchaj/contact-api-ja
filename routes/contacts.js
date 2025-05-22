@@ -3,6 +3,15 @@ const router = express.Router();
 const Contact = require('../models/contact');
 
 // GET all contacts
+/**
+ * @swagger
+ * /contacts:
+ *   get:
+ *     summary: Get all contacts
+ *     responses:
+ *       200:
+ *         description: A list of contacts
+ */
 router.get('/', async (req, res) => {
   try {
     const contacts = await Contact.find();
@@ -46,6 +55,23 @@ router.put('/:id', async (req, res) => {
 });
 
 // DELETE contact
+/**
+ * @swagger
+ * /contacts/{id}:
+ *   delete:
+ *     summary: Delete a contact by ID
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *     responses:
+ *       204:
+ *         description: Successfully deleted
+ *       404:
+ *         description: Contact not found
+ */
 router.delete('/:id', async (req, res) => {
   try {
     const deleted = await Contact.findByIdAndDelete(req.params.id);
