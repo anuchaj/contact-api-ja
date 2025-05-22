@@ -6,9 +6,10 @@ const doc = {
     title: 'Contacts API',
     description: 'API for managing contacts'
   },
-  host: 'https://contact-api-ja.onrender.com', // localhost:3000' changed to Render domain upon deployed
+  host: 'contact-api-ja.onrender.com', // localhost:3000' changed to Render domain upon deployed
   schemes: ['https'],
-  basePath: '/api'
+  basePath: '/api',
+  schemes: ['https'], // ✅ Secure scheme
 };
 
 const outputFile = 'swagger-output.json';

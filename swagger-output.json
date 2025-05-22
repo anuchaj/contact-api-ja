@@ -5,11 +5,9 @@
     "description": "API for managing contacts",
     "version": "1.0.0"
   },
-  "host": "https://contact-api-ja.onrender.com",
+  "host": "contact-api-ja.onrender.com",
   "basePath": "/api",
-  "schemes": [
-    "https"
-  ],
+  "schemes": ["https"],
   "paths": {
     "/": {
       "get": {
