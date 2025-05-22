@@ -8,7 +8,7 @@
   "host": "https://contact-api-ja.onrender.com",
   "basePath": "/api",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/": {
