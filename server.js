@@ -7,7 +7,6 @@ const swaggerFile = require('./swagger-output.json');
 const contactRoutes = require('./routes/contacts');
 const cors = require('cors');
 
-app.use(cors()); // ✅ This enables all CORS requests
 dotenv.config();
 
 const app = express();
@@ -15,7 +14,7 @@ const PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(express.json());
-
+app.use(cors()); // ✅ This enables all CORS requests
 
 // MongoDB connection
 mongoose.connect(process.env.MONGODB_URI)
