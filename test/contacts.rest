@@ -1,0 +1,32 @@
+### Get all contacts
+GET http://localhost:3000/api/contacts
+
+### Get contact by ID
+GET http://localhost:3000/api/contacts/{682628cd12b8f2ec52e24df6}
+
+### Create contact
+POST http://localhost:3000/api/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Jane",
+  "lastName": "Doe",
+  "email": "jane@example.com",
+  "favoriteColor": "Blue",
+  "birthday": "1990-01-01"
+}
+
+### Update contact
+PUT http://localhost:3000/api/contacts/{682628cd12b8f2ec52e24df6}
+Content-Type: application/json
+
+{
+  "firstName": "Jane Updated",
+  "lastName": "Doe",
+  "email": "jane@example.com",
+  "favoriteColor": "Red",
+  "birthday": "1990-01-01"
+}
+
+### Delete contact
+DELETE http://localhost:3000/api/contacts/{682628cd12b8f2ec52e24df6}
